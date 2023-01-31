@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<trees>
+    <tree path="/src/assets" title="图标"/>
+    <tree path="/src/boot" title="Axios"/>
+    <tree path="/src/components" title="工具类"/>
+    <tree path="/src/css" title="CSS"/>
+    <tree path="/src/layouts" title="顶级页面"/>
+    <tree path="/src/pages" title="管理页面"/>
+    <tree path="/src/router" title="路由"/>
+    <tree path="/src/store" title="VueX"/>
+    <tree path="/quasar.config.js" title="Quasar配置" extension="js"/>
+    <tree path="/src/monitor" title="监控页面"/>
+    <tree path="/src/monitors" title="监控页面"/>
+    <tree path="/src/settings" title="设置页面"/>
+    <tree path="/src/pages/CommentManager.vue" title="评论" extension="vue"/>
+    <tree path="/src/layouts/ErrorNotFound.vue" title="404" extension="vue"/>
+    <tree path="/src/layouts/Login.vue" title="登录" extension="vue"/>
+    <tree path="/src/layouts/MainLayout.vue" title="整体框架" extension="vue"/>
+    <tree path="/src/pages/ItemManager.vue" title="物品" extension="vue"/>
+    <tree path="/src/pages/OrderManager.vue" title="订单" extension="vue"/>
+    <tree path="/src/pages/PicManager.vue" title="图片" extension="vue"/>
+    <tree path="/src/pages/SortManager.vue" title="分类" extension="vue"/>
+    <tree path="/src/pages/UserManager.vue" title="用户" extension="vue"/>
+    <tree path="/src/settings/About.vue" title="关于" extension="vue"/>
+    <tree path="/src/settings/HomeSetting.vue" title="首页" extension="vue"/>
+    <tree path="/src/settings/UserSetting.vue" title="用户" extension="vue"/>
+    <tree path="/src/monitors/Dashboard.vue" title="仪表盘" extension="vue"/>
+    <tree path="/src/monitors/DataInfo.vue" title="数据监控" extension="vue"/>
+    <tree path="/src/monitors/LogInfo.vue" title="日志监控" extension="vue"/>
+    <tree path="/src/monitors/SysInfo.vue" title="系统监控" extension="vue"/>
+    <tree path="/src/components/CommCard.vue" title="一般监控组件" extension="vue"/>
+    <tree path="/src/components/WideCard.vue" title="宽体监控组件" extension="vue"/>
+    <tree path="/src/pages/RollManager.vue" title="抽卡" extension="vue"/>
+</trees>
