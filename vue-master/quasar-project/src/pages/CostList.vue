@@ -4,7 +4,7 @@
   </div>
   <div class="q-pa-md" style="max-width: 800px">
     <q-table
-      title="排行榜"
+      title="花费记录"
       :rows="tops"
       :columns="columns"
       row-key="name"
@@ -23,18 +23,32 @@ let InitialPagination: any = {
 };
 const columns: any = [
   {
-    name: "username",
+    name: "userId",
     required: true,
-    label: "用户名",
+    label: "用户ID",
     align: "left",
-    field: "username",
+    field: "userId",
     sortable: true,
   },
   {
-    name: "score",
+    name: "cost",
     align: "center",
-    label: "score",
-    field: "score",
+    label: "cost",
+    field: "cost",
+    sortable: true,
+  },
+  {
+    name: "itemID",
+    align: "center",
+    label: "道具ID",
+    field: "itemId",
+    sortable: true,
+  },
+  {
+    name: "platformId",
+    align: "center",
+    label: "platformID",
+    field: "platformId",
     sortable: true,
   },
   {
@@ -45,8 +59,8 @@ const columns: any = [
   },
 ];
 function flashTop() {
-  api.get("/user/list").then((res: any) => {
-    tops.value = res.data;
+  api.get("/cost/list").then((res: any) => {
+    tops.value = res.data.data;
   });
 }
 flashTop();

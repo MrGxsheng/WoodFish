@@ -6,7 +6,9 @@ import com.woodfish.mapper.CostMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.time.LocalDateTime;
 import java.util.List;
+import java.util.Map;
 
 /**
  * <p>
@@ -29,7 +31,7 @@ public class CostController {
         return Result.success(cost);
     }
 
-    @GetMapping()
+    @GetMapping("/list")
     public Result queryAll(){
         List<Cost> costs = costMapper.selectList(null);
         return Result.success(costs);
@@ -48,7 +50,13 @@ public class CostController {
     }
 
     @PostMapping
-    public Result save(@RequestBody Cost cost){
+    public Result save(@RequestBody Map<String , String > map){
+        Cost cost = new Cost();
+        cost.setCost(Integer.parseInt(map.get("cost")));
+        cost.setCreatetime(LocalDateTime.now());
+        cost.setItemid(Integer.parseInt(map.get("itemId")));
+        cost.setPlatformid(Integer.parseInt(map.get("platformId")));
+        cost.setUserid(Integer.parseInt(map.get("userId")));
         costMapper.insert(cost);
         return Result.success("添加成功");
     }

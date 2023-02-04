@@ -29,19 +29,19 @@ public class Cost implements Serializable {
     private Integer id;
 
     @ApiModelProperty("外键，用户id")
-    private Integer userId;
+    private Integer userid;
 
     @ApiModelProperty("花费数目")
     private Integer cost;
 
     @ApiModelProperty("消费项目")
-    private Integer itemId;
+    private Integer itemid;
 
     @ApiModelProperty("消费平台")
-    private Integer platformId;
+    private Integer platformid;
 
     @ApiModelProperty("创建日期")
-    private LocalDateTime createTime;
+    private LocalDateTime createtime;
 
 
 }
